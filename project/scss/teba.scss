@@ -1,4 +1,62 @@
 @import "./mixin/mixin";
+// global
+// section-dark footer
+.section-dark {
+  // test
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  .container {
+    .row {
+      // right
+      .col-md-6.col-xs-12.clearfix.margin-bottom {
+        h4.text-white.less-mar3.font-weight-6 {
+        }
+        .clearfix {
+        }
+        p.text-light {
+        }
+      }
+      // center
+      .col-md-2 {
+      }
+      // left
+      .col-md-4.col-xs-12.clearfix.margin-bottom {
+        h4.text-white.less-mar3.font-weight-6 {
+        }
+        .clearfix {
+        }
+        div {
+          address.text-light.address_teba {
+          }
+        }
+        .clearfix {
+        }
+        div {
+          p.text-light {
+          }
+          span.text-light {
+            word-break: break-all;
+            @include mq(200px, 500px) {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+      ul.footer-social-icons.white.left-align.icons-plain.text-center {
+        li {
+          a {
+            i {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// copy right
+.section-medium-dark {
+  padding: 15px 0 !important;
+}
 // home rtl
 .home {
   .container {
@@ -33,10 +91,16 @@
               .col-md-6.col-sm-12.text-center {
                 margin-bottom: 30px !important;
                 .logo-middle {
+                  width: fit-content !important;
+                  height: fit-content !important;
+                  display: inline-block !important;
                   a {
+                    width: 100% !important;
+                    overflow: hidden !important;
                     img {
                       @include mq(250px, 500px) {
                         top: 0 !important;
+                        left: 0 !important;
                       }
                     }
                   }
@@ -146,6 +210,18 @@
       .section-medium-dark {
         padding: 15px 0 !important;
       }
+    }
+  }
+}
+// about teba
+.features-section-eight{
+  .auto-container{
+    .about1{
+      margin: 30px 0 0 0 !important;
+      h2{}
+    }
+    .des1{
+      padding: 30px 0 60px 0 !important;
     }
   }
 }
