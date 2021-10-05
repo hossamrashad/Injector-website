@@ -185,7 +185,7 @@ gulp.task("compressImages", function () {
 gulp.task("compress", function () {
   return gulp
     .src("dist/**/*.*")
-    .pipe(zip("Finance-Company.zip"))
+    .pipe(zip("website.zip"))
     .pipe(gulp.dest("."))
     .pipe(notify("Files Is Compressed To Zip "));
 });
