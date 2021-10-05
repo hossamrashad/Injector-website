@@ -214,14 +214,264 @@
   }
 }
 // about teba
-.features-section-eight{
-  .auto-container{
-    .about1{
+.features-section-eight {
+  .auto-container {
+    .about1 {
       margin: 30px 0 0 0 !important;
-      h2{}
+      h2 {
+        padding: 10px 20px !important;
+      }
     }
-    .des1{
-      padding: 30px 0 60px 0 !important;
+    .des1 {
+      padding: 30px 10px 60px 10px !important;
+    }
+  }
+}
+// mession
+.pos {
+  left: 0 !important;
+  h2 {
+    margin-right: 0 !important;
+  }
+}
+div {
+  div {
+    p.des2 {
+      left: 0 !important;
+      width: 90%;
+    }
+  }
+}
+// products
+.features-section-eight {
+  .auto-container {
+    // title
+    .sec-title-two {
+      margin-top: 60px;
+      h2 {
+      }
+      .line {
+      }
+      .logo-middle {
+        margin: 30px auto !important;
+        width: 100% !important;
+        height: fit-content !important;
+        a {
+          top: 0 !important;
+          margin: auto !important;
+          display: block !important;
+          img {
+            top: 0 !important;
+          }
+        }
+      }
+    }
+    // img
+    .inner-container {
+      .row {
+        // lift
+        .left-column {
+          .inner-column {
+            margin-right: 0 !important;
+            a:first-child {
+              .feature-block-five.click-block.active {
+                border: 10px solid #333;
+                .inner-box {
+                  // box 1
+                  .box1{
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                  }
+                  .icon-box {
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    .line {
+                    }
+                    h3 {
+                    }
+                    img {
+                    }
+                  }
+                }
+              }
+            }
+            a:nth-child(2) {
+              .feature-block-five.click-block.active {
+                border: 10px solid #333;
+                .inner-box {
+                  .box2{
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                  }
+                  // box 2
+                  .icon-box {
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    .line {
+                    }
+                    h3 {
+                    }
+                    img {
+                    }
+                  }
+                }
+              }
+            }
+            a:nth-child(3) {
+              .feature-block-five.click-block.active {
+                border: 10px solid #333;
+                .inner-box {
+                  // box 3
+                  .box3 {
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                  }
+                  .icon-box {
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    .line {
+                    }
+                    h3 {
+                    }
+                    img {
+                    }
+                  }
+                }
+              }
+            }
+            a:nth-child(4) {
+              .feature-block-five.click-block.active {
+                border: 10px solid #333;
+                .inner-box {
+                  // box 4
+                  .box4 {
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                  }
+                  .icon-box {
+                    @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    .line {
+                    }
+                    h3 {
+                    }
+                    img {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        // image-column
+        .image-column {
+          .inner-column {
+            .image {
+              h1 {
+              }
+              div {
+                img {
+                }
+              }
+              p {
+              }
+            }
+          }
+        }
+        // right-column
+        .right-column {
+          .inner-column {
+            a:first-child {
+              .feature-block-five {
+                .inner-box {
+                  .icon-box {
+                    .line {
+                      h3 {
+                      }
+                      img {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            a:nth-child(2) {
+            }
+            .feature-block-five {
+              a:first-child {
+                .inner-box {
+                  .icon-box {
+                    .line {
+                    }
+                    h3 {
+                    }
+                    img {
+                    }
+                  }
+                }
+              }
+              a:nth-child(2) {
+                .feature-block-five {
+                  .inner-box {
+                    .icon-box {
+                      .line {
+                      }
+                      h3 {
+                      }
+                      img {
+                      }
+                    }
+                  }
+                }
+              }
+              a:nth-child(3) {
+                .feature-block-five {
+                  .inner-box {
+                    .icon-box {
+                      .line {
+                      }
+                      h3 {
+                      }
+                      img {
+                      }
+                    }
+                  }
+                }
+              }
+              a:nth-child(4) {
+                .feature-block-five {
+                  .inner-box {
+                    .icon-box {
+                      .line {
+                      }
+                      h3 {
+                      }
+                      img {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
