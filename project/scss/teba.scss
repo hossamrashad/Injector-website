@@ -1,3 +1,4 @@
+@import './mixin/mixin';
 // home rtl
 .home {
   .container {
@@ -27,9 +28,27 @@
       }
       // section-dark footer
       .section-dark {
+        // test
         padding-top: 50px !important;
         padding-bottom: 50px !important;
-        background: #333 !important;
+        .container{
+          .row{
+            // right
+            .col-md-6.col-xs-12.clearfix.margin-bottom{
+
+            }
+            // center
+            .col-md-2{}
+            // left
+            .col-md-4.col-xs-12.clearfix.margin-bottom{
+              div{
+                span.text-light{
+                  word-break: break-all;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
