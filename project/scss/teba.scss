@@ -44,6 +44,9 @@
               div{
                 span.text-light{
                   word-break: break-all;
+                  @include mq(200px,500px){
+                      word-break: break-all;
+                  }
                 }
               }
             }
