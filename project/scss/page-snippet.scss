@@ -1,0 +1,36 @@
+.PageTitleInjector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 138px;
+    height: 70vh;
+}
+
+
+/* website snippet  */
+
+#app {
+    .app--vscode {
+        .app__main {
+            .app__half {
+                .app__halfbottom {
+                    // Style For textarea write
+                    textarea.app__textarea {
+                        height: 100vh !important;
+                        white-space: break-spaces !important;
+                        word-break: break-all;
+                    }
+                    // Style For Button copy
+                    .app__buttons {
+                        position: fixed;
+                        right: 8px;
+                        top: 10px;
+                        .app__btncopy {
+                            border: 2px solid #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

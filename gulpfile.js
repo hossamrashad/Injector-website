@@ -34,11 +34,11 @@ gulp.task("html", function () {
 // =============================== Task Scss =============================== //
 gulp.task("scss", function () {
   return gulp
-    .src("project/scss/teba.scss")
+    .src("project/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
-    .pipe(concat("teba.css"))
+    .pipe(concat("style.css"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist/css"))
     .pipe(livereload())
