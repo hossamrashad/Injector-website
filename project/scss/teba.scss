@@ -6,6 +6,13 @@
       // slider
       .col-md-12.slide-controls-2.demoo {
       }
+      .clearfix {
+      }
+      // like hr
+      .divider-line.solid.light {
+      }
+      .clearfix {
+      }
       // about & img
       .about.sec-padding {
         .container {
@@ -14,7 +21,28 @@
             .col-md-6.padding-left-6 {
               .col-md-6.col-sm-12.nopadding {
                 .sec-title-container.poss.less-padding-3.text-right {
+                  right: 0 !important;
+                  h2.font-weight-6.less-mar-1.line-height-4 {
+                  }
                 }
+              }
+              // img
+              .col-md-6.col-sm-12.text-center {
+                .logo-middle {
+                  a {
+                    img {
+                      @include mq(250px, 500px) {
+                        top: 0 !important;
+                      }
+                    }
+                  }
+                }
+              }
+              .clearfix {
+              }
+              p {
+              }
+              a {
               }
             }
           }
@@ -23,8 +51,30 @@
           }
         }
       }
+      .clearfix {
+      }
       // partners section-primary
       .partners.section-primary {
+        .container {
+          .centered {
+            h2 {
+            }
+            .line {
+            }
+          }
+        }
+        .row {
+          ul.clients-list.grid-cols-5.hover-7.noborder {
+            li {
+              a {
+                img {
+                }
+              }
+            }
+          }
+        }
+      }
+      .clearfix {
       }
       // section-dark footer
       .section-dark {
@@ -35,13 +85,31 @@
           .row {
             // right
             .col-md-6.col-xs-12.clearfix.margin-bottom {
+              h4.text-white.less-mar3.font-weight-6 {
+              }
+              .clearfix {
+              }
+              p.text-light {
+              }
             }
             // center
             .col-md-2 {
             }
             // left
             .col-md-4.col-xs-12.clearfix.margin-bottom {
+              h4.text-white.less-mar3.font-weight-6 {
+              }
+              .clearfix {
+              }
               div {
+                address.text-light.address_teba {
+                }
+              }
+              .clearfix {
+              }
+              div {
+                p.text-light {
+                }
                 span.text-light {
                   word-break: break-all;
                   @include mq(200px, 500px) {
@@ -50,8 +118,22 @@
                 }
               }
             }
+            ul.footer-social-icons.white.left-align.icons-plain.text-center {
+              li {
+                a {
+                  i {
+                  }
+                }
+              }
+            }
           }
         }
+      }
+      .clearfix {
+      }
+      // copy right
+      .section-medium-dark {
+        padding: 15px 0;
       }
     }
   }
