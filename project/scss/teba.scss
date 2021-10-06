@@ -275,11 +275,18 @@ div {
             margin-right: 0 !important;
             a:first-child {
               .feature-block-five.click-block.active {
-                border: 10px solid #333;
                 .inner-box {
                   // box 1
-                  .box1{
+                  .box1 {
                     @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include sm-md-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include md-lg-media {
                       right: 0 !important;
                       top: 0 !important;
                     }
@@ -301,10 +308,17 @@ div {
             }
             a:nth-child(2) {
               .feature-block-five.click-block.active {
-                border: 10px solid #333;
                 .inner-box {
-                  .box2{
+                  .box2 {
                     @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include sm-md-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include md-lg-media {
                       right: 0 !important;
                       top: 0 !important;
                     }
@@ -327,11 +341,18 @@ div {
             }
             a:nth-child(3) {
               .feature-block-five.click-block.active {
-                border: 10px solid #333;
                 .inner-box {
                   // box 3
                   .box3 {
                     @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include sm-md-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include md-lg-media {
                       right: 0 !important;
                       top: 0 !important;
                     }
@@ -353,11 +374,18 @@ div {
             }
             a:nth-child(4) {
               .feature-block-five.click-block.active {
-                border: 10px solid #333;
                 .inner-box {
                   // box 4
                   .box4 {
                     @include mq(250px, 992px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include sm-md-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include md-lg-media {
                       right: 0 !important;
                       top: 0 !important;
                     }
@@ -400,6 +428,24 @@ div {
             a:first-child {
               .feature-block-five {
                 .inner-box {
+                  .box5 {
+                    @include sm-md-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include md-lg-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include mq(250px, 786px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include xs-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                  }
                   .icon-box {
                     .line {
                       h3 {
@@ -416,6 +462,24 @@ div {
             .feature-block-five {
               a:first-child {
                 .inner-box {
+                  .box6 {
+                    @include sm-md-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include md-lg-media {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include mq(250px, 786px) {
+                      right: 0 !important;
+                      top: 0 !important;
+                    }
+                    @include xs-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                  }
                   .icon-box {
                     .line {
                     }
@@ -429,6 +493,24 @@ div {
               a:nth-child(2) {
                 .feature-block-five {
                   .inner-box {
+                    .box7 {
+                      @include sm-md-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include md-lg-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include mq(250px, 786px) {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include xs-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                    }
                     .icon-box {
                       .line {
                       }
@@ -443,6 +525,24 @@ div {
               a:nth-child(3) {
                 .feature-block-five {
                   .inner-box {
+                    .box8 {
+                      @include sm-md-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include md-lg-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include mq(250px, 786px) {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include xs-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                    }
                     .icon-box {
                       .line {
                       }
@@ -457,6 +557,24 @@ div {
               a:nth-child(4) {
                 .feature-block-five {
                   .inner-box {
+                    .box9 {
+                      @include sm-md-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include md-lg-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include mq(250px, 786px) {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                      @include xs-media {
+                        right: 0 !important;
+                        top: 0 !important;
+                      }
+                    }
                     .icon-box {
                       .line {
                       }
