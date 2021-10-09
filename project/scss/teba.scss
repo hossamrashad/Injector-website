@@ -227,7 +227,7 @@
     }
   }
 }
-// mession
+// page mession
 .pos {
   left: 0 !important;
   h2 {
@@ -242,7 +242,7 @@ div {
     }
   }
 }
-// products
+// page products
 .features-section-eight {
   .auto-container {
     // title
@@ -290,6 +290,10 @@ div {
                       right: 0 !important;
                       top: 0 !important;
                     }
+                    @include xs-media {
+                      right: 0 !important;
+                      top: -200px !important;
+                    }
                   }
                   .icon-box {
                     @include mq(250px, 992px) {
@@ -321,6 +325,10 @@ div {
                     @include md-lg-media {
                       right: 0 !important;
                       top: 0 !important;
+                    }
+                    @include xs-media {
+                      right: 0 !important;
+                      top: -170px !important;
                     }
                   }
                   // box 2
@@ -356,6 +364,10 @@ div {
                       right: 0 !important;
                       top: 0 !important;
                     }
+                    @include xs-media {
+                      right: 0 !important;
+                      top: -150px !important;
+                    }
                   }
                   .icon-box {
                     @include mq(250px, 992px) {
@@ -388,6 +400,10 @@ div {
                     @include md-lg-media {
                       right: 0 !important;
                       top: 0 !important;
+                    }
+                    @include xs-media {
+                      right: 0 !important;
+                      top: -135px !important;
                     }
                   }
                   .icon-box {
@@ -442,9 +458,9 @@ div {
                       top: 0 !important;
                     }
                     @include xs-media {
-                        right: 0 !important;
-                        top: 50px !important;
-                      }
+                      right: 0 !important;
+                      top: 25px !important;
+                    }
                   }
                   .icon-box {
                     .line {
@@ -476,9 +492,9 @@ div {
                       top: 0 !important;
                     }
                     @include xs-media {
-                        right: 0 !important;
-                        top: 70px !important;
-                      }
+                      right: 0 !important;
+                      top: 30px !important;
+                    }
                   }
                   .icon-box {
                     .line {
@@ -508,7 +524,7 @@ div {
                       }
                       @include xs-media {
                         right: 0 !important;
-                        top: 160px !important;
+                        top: 100px !important;
                       }
                     }
                     .icon-box {
@@ -540,7 +556,7 @@ div {
                       }
                       @include xs-media {
                         right: 0 !important;
-                        top: 190px !important;
+                        top: 110px !important;
                       }
                     }
                     .icon-box {
@@ -572,7 +588,7 @@ div {
                       }
                       @include xs-media {
                         right: 0 !important;
-                        top: 0 !important;
+                        top: 120px !important;
                       }
                     }
                     .icon-box {
@@ -581,6 +597,275 @@ div {
                       h3 {
                       }
                       img {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// page ourTeam
+.cp-feature-box-1:hover .img-box .text-box .sc-icons-box,
+.cp-feature-box-1.active .img-box .text-box .sc-icons-box {
+  left: 65px !important;
+}
+.centered {
+  padding-bottom: 30px !important;
+}
+// page news
+section {
+  section {
+    .container {
+      .ce-feature-box-12 {
+        padding-bottom: 30px !important;
+        h2.cen {
+        }
+        div.img {
+          img {
+            width: 100% !important;
+          }
+        }
+        p.small-text {
+        }
+        a.btn {
+          margin-bottom: 30px !important;
+          i {
+            margin-left: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+// page contacts ar
+section {
+  section {
+    .auto-container {
+      margin: 40px auto !important;
+    }
+  }
+  section.section-side-image.clearfix.layer5 {
+    .img-holder {
+      .background-imgholder {
+        img {
+        }
+      }
+    }
+    .container-fluid {
+      .row {
+        .nopadding {
+          .header-inner {
+            .overlay {
+              // right
+              .col-md-6 {
+                .contain {
+                  .cube {
+                  }
+                  .move {
+                    h1 {
+                      span {
+                      }
+                    }
+                  }
+                  p.note1.notee {
+                  }
+                  p.note.notee1 {
+                  }
+                  div.add {
+                    h4.marg {
+                    }
+                    span {
+                    }
+                    div.whats {
+                      a {
+                        img {
+                        }
+                        h4 {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              // lift
+              .col-md-6 {
+                form.contact100-form.validate-form {
+                  .wrap-input100 {
+                    span.label-input100 {
+                    }
+                    input {
+                    }
+                    span.focus-input100 {
+                    }
+                  }
+                  .container-contact100-form-btn {
+                    button {
+                      span {
+                        // start i
+                        i {
+                          transform: rotate(180deg);
+                        }
+                        // end i
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// page existingcust
+section {
+  .layer1 {
+    min-height: 1350px !important;
+  }
+  section.section-side-image.clearfix.layer1 {
+    .container-fluid {
+      .row {
+        .nopadding {
+          .header-inner {
+            .overlay {
+              .register_detail {
+                form {
+                  .row {
+                    .form-group {
+                      label {
+                      }
+                      div {
+                        input {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// page newcustomer
+section {
+  section.features-section-eight {
+    div.auto-container {
+      div.exist {
+        h2 {
+        }
+      }
+    }
+  }
+  .layer {
+    min-height: 1350px !important;
+  }
+  section.section-side-image.clearfix.layer {
+    // height: 700px !important;
+    div.img-holder {
+      @include xs-media {
+        height: 1350px !important;
+      }
+      @include sm-md-media {
+        height: 1350px !important;
+      }
+      div.background-imgholder {
+        img {
+        }
+      }
+    }
+    div.container-fluid {
+      .row {
+        .nopadding {
+          div.header-inner {
+            @include xs-media {
+              min-height: 1350px !important;
+              overflow-y: auto !important;
+            }
+            @include sm-md-media {
+              min-height: 1350px !important;
+              overflow-y: auto !important;
+            }
+            // height: 100% !important;
+            div.overlay {
+              // right
+              .col-md-6 {
+                @include md-media {
+                  max-width: 49% !important;
+                }
+                @include md-lg-media {
+                  max-width: 49% !important;
+                }
+                @include xs-media {
+                  min-width: 80% !important;
+                  height: fit-content !important;
+                }
+                @include sm-md-media {
+                  min-width: 80% !important;
+                  height: fit-content !important;
+                }
+                .contain {
+                  .cube {
+                  }
+                  .move {
+                    h1 {
+                      span {
+                      }
+                    }
+                  }
+                  p.note.not {
+                  }
+                  p.note1.not1 {
+                  }
+                }
+              }
+              // lift
+              div.col-md-6 {
+                height: fit-content !important;
+                padding-bottom: 30px !important;
+                // overflow-y: auto !important;
+                form.contact100-form.validate-form {
+                  div.wrap-input100 {
+                    width: 200px !important;
+                    span.label-input100 {
+                      @include sm-md-media {
+                        left: 50% !important;
+                      }
+                    }
+                    input,
+                    textarea {
+                      @include xs-media {
+                        width: 200px !important;
+                      }
+                      @include sm-md-media {
+                        width: 200px !important;
+                      }
+                    }
+                    span.focus-input100 {
+                    }
+                  }
+                  div.newbtn {
+                    i {
+                    }
+                    span {
+                    }
+                    input {
+                    }
+                  }
+                  div.container-contact100-form-btn {
+                    button {
+                      span {
+                        i {
+                        }
                       }
                     }
                   }
