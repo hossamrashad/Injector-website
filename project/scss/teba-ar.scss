@@ -992,7 +992,6 @@ section {
                       @include mq(992px) {
                         margin-right: 100px !important ;
                       }
-                      
                     }
                     span {
                     }
@@ -1074,7 +1073,8 @@ section {
                       @include mq(786px) {
                       }
                       @include mq(576px) {
-                        width: 250px;
+                        width: 100%;
+                        min-width: 250px;
                       }
                       @include mq(450px) {
                       }
