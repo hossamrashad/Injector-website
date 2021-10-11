@@ -414,7 +414,7 @@
 
 // @include xs-sm-media{}
 @mixin xs-sm-media {
-    @media (min-width: 500px) and (max-width: 766px) {
+    @media (min-width: 250px) and (max-width: 766px) {
         @content;
     }
 }

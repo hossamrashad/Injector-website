@@ -792,7 +792,7 @@ section {
                     @include sm-md-media {
                       width: 250px !important;
                     }
-                    @include md-media {
+                    @include lg-media {
                       width: 100% !important;
                     }
                     span.label-input100 {
@@ -980,15 +980,15 @@ section {
                 // overflow-y: auto !important;
                 form.contact100-form.validate-form {
                   div.wrap-input100 {
-                    span.label-input100 {
-                      @include sm-media {
-                        left: 50% !important;
-                        width: 200px !important;
-                      }
+                    @include sm-media {
+                      left: 50% !important;
+                      width: 200px !important;
                     }
-                    @include md-media {
+                    @include lg-media {
                       width: 100% !important;
                       left: 0 !important;
+                    }
+                    span.label-input100 {
                     }
                     input,
                     textarea {
