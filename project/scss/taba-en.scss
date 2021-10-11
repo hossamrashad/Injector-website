@@ -1,6 +1,11 @@
 @import "./mixin/mixin";
+/* page-en */
+// en
 // global
 // section-dark footer
+.page-en {
+  color: red;
+}
 .section-dark {
   // test
   padding-top: 50px !important;
@@ -57,7 +62,7 @@
 .section-medium-dark {
   padding: 15px 0 !important;
 }
-// home rtl
+// home en
 .home {
   .container {
     .row {
@@ -83,7 +88,8 @@
                 .sec-title-container.poss.less-padding-3.text-right {
                   right: 0 !important;
                   h2.font-weight-6.less-mar-1.line-height-4 {
-                    margin-right: 0 !important;
+                    // margin-right: 0 !important;
+                    text-align: center !important;
                   }
                 }
               }
@@ -213,7 +219,7 @@
     }
   }
 }
-// about teba
+// about teba en
 .features-section-eight {
   .auto-container {
     .about1 {
@@ -642,14 +648,76 @@ section {
     }
   }
 }
-// page contacts ar
+// page contacts en
+.layer5 {
+  @include xs-sm-media {
+    min-height: 1200px !important;
+  }
+  @include sm-md-media {
+    min-height: 1200px !important;
+  }
+  height: auto;
+  .header-inner {
+    @include xs-sm-media {
+      min-height: 1200px !important;
+    }
+    @include sm-md-media {
+      min-height: 1200px !important;
+    }
+    .overlay {
+      .col-md-6 {
+        @include xs-sm-media {
+          width: 100% !important;
+        }
+        @include sm-md-media {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
 section {
-  section {
+  section.features-section-eight {
     .auto-container {
       margin: 40px auto !important;
     }
   }
+  .layer5 {
+    @include xs-sm-media {
+      min-height: 1200px !important;
+    }
+    @include sm-md-media {
+      min-height: 1200px !important;
+    }
+    height: auto;
+    .header-inner {
+      @include xs-sm-media {
+        min-height: 1200px !important;
+      }
+      @include sm-md-media {
+        min-height: 1200px !important;
+      }
+      .overlay {
+        .col-md-6 {
+          @include xs-sm-media {
+            width: 100% !important;
+          }
+          @include sm-md-media {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
   section.section-side-image.clearfix.layer5 {
+    @include xs-sm-media {
+      min-height: 1200px !important;
+    }
+    @include sm-md-media {
+      min-height: 1200px !important;
+    }
+    // height: auto !important;
     .img-holder {
       .background-imgholder {
         img {
@@ -663,6 +731,10 @@ section {
             .overlay {
               // right
               .col-md-6 {
+                @include xs-sm-media {
+                  width: 100% !important;
+                  height: auto !important;
+                }
                 .contain {
                   .cube {
                   }
@@ -673,10 +745,22 @@ section {
                     }
                   }
                   p.note1.notee {
+                    @include xs-sm-media {
+                      top: -100px;
+                      position: relative;
+                    }
                   }
                   p.note.notee1 {
+                    @include xs-sm-media {
+                      top: -100px;
+                      position: relative;
+                    }
                   }
                   div.add {
+                    @include xs-sm-media {
+                      top: -100px;
+                      position: relative;
+                    }
                     h4.marg {
                     }
                     span {
@@ -694,21 +778,54 @@ section {
               }
               // lift
               .col-md-6 {
+                @include xs-sm-media {
+                  width: 100% !important;
+                }
                 form.contact100-form.validate-form {
+                  @include xs-sm-media {
+                    padding: 0px 88px 57px 230px !important;
+                  }
                   .wrap-input100 {
+                    @include xs-sm-media {
+                      width: 250px !important;
+                    }
+                    @include sm-md-media {
+                      width: 250px !important;
+                    }
+                    @include md-media {
+                      width: 100% !important;
+                    }
                     span.label-input100 {
                     }
-                    input {
+                    &:last-child {
+                      margin-bottom: 15px !important;
+                    }
+                    input,
+                    textarea {
+                      @include xs-sm-media {
+                        width: 200px !important;
+                      }
+                      @include sm-md-media {
+                        width: 200px !important;
+                      }
+                      width: 250px;
+                    }
+                    textarea {
+                      @include xs-sm-media {
+                        height: 90px !important;
+                        margin-bottom: 25px !important;
+                      }
                     }
                     span.focus-input100 {
                     }
                   }
                   .container-contact100-form-btn {
+                    margin-top: 25% !important;
                     button {
                       span {
                         // start i
                         i {
-                          transform: rotate(180deg);
+                          transform: rotate(0deg) !important;
                         }
                         // end i
                       }
@@ -726,15 +843,30 @@ section {
 // page existingcust
 section {
   .layer1 {
-    min-height: 1350px !important;
+    min-height: 1200px !important;
+    max-height: 1566px !important;
+    @include xs-sm-media {
+      min-height: 900px !important;
+    }
   }
   section.section-side-image.clearfix.layer1 {
     .container-fluid {
       .row {
         .nopadding {
           .header-inner {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            min-height: 1200px !important;
+            @include xs-sm-media {
+              min-height: 900px !important;
+            }
             .overlay {
               .register_detail {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                height: 100%;
                 form {
                   .row {
                     .form-group {
@@ -742,6 +874,15 @@ section {
                       }
                       div {
                         input {
+                        }
+                      }
+                    }
+                    div.col-md-12 {
+                      .pass {
+                        left: auto !important;
+                        h3 {
+                          button {
+                          }
                         }
                       }
                     }
@@ -767,10 +908,14 @@ section {
     }
   }
   .layer {
-    min-height: 1350px !important;
+    // min-height: 1350px !important;
+    @include xs-media {
+      // min-height: 1300px !important;
+    }
   }
   section.section-side-image.clearfix.layer {
     // height: 700px !important;
+    min-height: 1300px !important;
     div.img-holder {
       @include xs-media {
         height: 1350px !important;
@@ -835,11 +980,15 @@ section {
                 // overflow-y: auto !important;
                 form.contact100-form.validate-form {
                   div.wrap-input100 {
-                    width: 200px !important;
                     span.label-input100 {
-                      @include sm-md-media {
+                      @include sm-media {
                         left: 50% !important;
+                        width: 200px !important;
                       }
+                    }
+                    @include md-media {
+                      width: 100% !important;
+                      left: 0 !important;
                     }
                     input,
                     textarea {
@@ -875,6 +1024,11 @@ section {
           }
         }
       }
+    }
+  }
+  .layer.not {
+    @include xs-sm-media {
+      margin-top: -40% !important;
     }
   }
 }
