@@ -695,22 +695,6 @@ section {
   @media only screen and (max-width: 600px) {
     left: 0% !important;
   }
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-  }
 }
 .label-input100 {
   /* Extra small devices (phones, 600px and down) */
@@ -724,19 +708,18 @@ section {
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (max-width: 785px) {
+    text-align: left;
+    position: unset;
+    top: unset !important;
+    left: unset !important;
+    width: 100%;
+    padding: 0 5px;
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (max-width: 400px) {
+    padding-right: 20px !important;
   }
 }
 .note {
@@ -763,16 +746,6 @@ section {
   }
 }
 .layer5 .header-inner {
-  @include mq(10000px) {
-  }
-  @include mq(1566px) {
-  }
-  @include mq(1200px) {
-  }
-  @include mq(992px) {
-  }
-  @include mq(786px) {
-  }
   @include mq(576px) {
     min-height: 1200px !important;
     max-height: 1500px !important;
@@ -817,22 +790,6 @@ section {
     }
   }
   .cube {
-    @include mq(10000px) {
-    }
-    @include mq(1566px) {
-    }
-    @include mq(1200px) {
-    }
-    @include mq(992px) {
-    }
-    @include mq(786px) {
-    }
-    @include mq(576px) {
-    }
-    @include mq(450px) {
-    }
-    @include mq(350px) {
-    }
     @include mq(250px) {
       width: 223px;
       height: 300px;
@@ -921,22 +878,7 @@ section {
                   width: 100% !important;
                   height: auto !important;
                 }
-                @include mq(10000px) {
-                }
-                @include mq(1566px) {
-                }
-                @include mq(1200px) {
-                }
-                @include mq(992px) {
-                }
-                @include mq(786px) {
-                }
-                @include mq(576px) {
-                }
-                @include mq(450px) {
-                }
-                @include mq(350px) {
-                }
+
                 @include mq(250px) {
                   width: 100% !important;
                   height: auto !important;
@@ -1025,27 +967,15 @@ section {
                     flex-direction: column;
                   }
 
-                  /* Small devices (portrait tablets and large phones, 600px and up) */
-                  @media only screen and (min-width: 600px) {
-                  }
-
-                  /* Medium devices (landscape tablets, 768px and up) */
-                  @media only screen and (min-width: 768px) {
-                  }
-
-                  /* Large devices (laptops/desktops, 992px and up) */
-                  @media only screen and (min-width: 992px) {
-                  }
-
-                  /* Extra large devices (large laptops and desktops, 1200px and up) */
-                  @media only screen and (min-width: 1200px) {
-                  }
                   .wrap-input100 {
                     @include xs-sm-media {
                       width: 250px !important;
                     }
                     @include sm-md-media {
                       width: 250px !important;
+                    }
+                    @include lg-media {
+                      width: 100% !important;
                     }
                     span.label-input100 {
                     }
@@ -1167,6 +1097,22 @@ section {
                         }
                       }
                     }
+                    button.btn.enter {
+                      @include mq(250px, 992px) {
+                      }
+                      @include md-lg-media {
+                        position: absolute;
+                        top: 620px;
+                      }
+                      @include xs-sm-media {
+                        position: absolute;
+                        top: 620px;
+                      }
+                      @include sm-md-media {
+                        position: absolute;
+                        top: 620px;
+                      }
+                    }
                   }
                 }
               }
@@ -1186,6 +1132,33 @@ section {
         h2 {
         }
       }
+    }
+  }
+  .label-input100 {
+    @include mq(992px, 1025px) {
+      left: 56% !important;
+    }
+  }
+  .move {
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      left: 50% !important;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
     }
   }
   .layer {
@@ -1232,25 +1205,91 @@ section {
                   max-width: 49% !important;
                 }
                 @include xs-media {
-                  min-width: 80% !important;
+                  min-width: 100% !important;
                   height: fit-content !important;
                 }
                 @include sm-md-media {
-                  min-width: 80% !important;
+                  min-width: 100% !important;
                   height: fit-content !important;
                 }
                 .contain {
+                  position: relative;
+
                   .cube {
+                    /* Extra small devices (phones, 600px and down) */
+                    @media only screen and (max-width: 600px) {
+                      width: 100% !important;
+                      left: 0 !important;
+                    }
                   }
                   .move {
+                    /* Extra small devices (phones, 600px and down) */
+                    @media only screen and (max-width: 600px) {
+                      position: absolute;
+                      top: 50% !important;
+                    }
                     h1 {
+                      @include xs-sm-media {
+                        font-size: 35px !important;
+                      }
+                      /* Extra small devices (phones, 600px and down) */
+                      @media only screen and (max-width: 600px) {
+                        font-size: 35px !important;
+                      }
                       span {
+                        @include xs-sm-media {
+                          top: -39px !important;
+                        }
+                        /* Extra small devices (phones, 600px and down) */
+                        @media only screen and (max-width: 600px) {
+                          top: -39px !important;
+                        }
                       }
                     }
                   }
                   p.note.not {
+                    @include xs-sm-media {
+                      display: none !important;
+                    }
+                    /* Extra small devices (phones, 600px and down) */
+                    @media only screen and (max-width: 600px) {
+                    }
+                    /* Small devices (portrait tablets and large phones, 600px and up) */
+                    @media only screen and (min-width: 600px) {
+                    }
+                    /* Medium devices (landscape tablets, 768px and up) */
+                    @media only screen and (min-width: 768px) {
+                      width: 60% !important;
+                      float: right;
+                    }
+                    /* Large devices (laptops/desktops, 992px and up) */
+                    @media only screen and (min-width: 992px) {
+                    }
+                    /* Extra large devices (large laptops and desktops, 1200px and up) */
+                    @media only screen and (min-width: 1200px) {
+                    }
                   }
                   p.note1.not1 {
+                    @include xs-sm-media {
+                      display: none !important;
+                    }
+                    /* Extra small devices (phones, 600px and down) */
+                    @media only screen and (max-width: 600px) {
+                    }
+                    /* Small devices (portrait tablets and large phones, 600px and up) */
+                    @media only screen and (min-width: 600px) {
+                    }
+                    /* Medium devices (landscape tablets, 768px and up) */
+                    @media only screen and (min-width: 768px) {
+                      width: 60% !important;
+                      float: right;
+                    }
+                    /* Large devices (laptops/desktops, 992px and up) */
+                    @media only screen and (min-width: 992px) {
+                    }
+                    /* Extra large devices (large laptops and desktops, 1200px and up) */
+                    @media only screen and (min-width: 1200px) {
+                    }
                   }
                 }
               }
@@ -1260,8 +1299,14 @@ section {
                 padding-bottom: 30px !important;
                 // overflow-y: auto !important;
                 form.contact100-form.validate-form {
+                  flex-direction: column !important;
                   div.wrap-input100 {
-                    width: 200px !important;
+                    width: 100% !important;
+                    min-width: 250px;
+
+                    @include mq(500px, 992px) {
+                      display: block !important;
+                    }
                     span.label-input100 {
                       @include sm-md-media {
                         left: 50% !important;
@@ -1271,17 +1316,23 @@ section {
                     textarea {
                       @include xs-media {
                         width: 100% !important;
-                        min-width: 150px !important;
+                        min-width: 100% !important;
                       }
                       @include sm-md-media {
                         width: 100% !important;
-                        min-width: 150px !important;
+                        min-width: 100% !important;
                       }
                     }
                     span.focus-input100 {
                     }
                   }
                   div.newbtn {
+                    @include sm-md-media {
+                      margin-bottom: 70px;
+                    }
+                    @include xs-media {
+                      margin-bottom: 70px;
+                    }
                     i {
                     }
                     span {
