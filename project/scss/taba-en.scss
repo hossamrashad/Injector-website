@@ -1540,13 +1540,11 @@ section {
 
                     /* Extra large devices (large laptops and desktops, 1200px and up) */
                     @media only screen and (min-width: 1200px) {
-                      width: 50%;
-                      
+                      width: 55%;
                     }
                     h1 {
                       span {
                         display: block;
-                        
                       }
                     }
                   }
@@ -1563,6 +1561,7 @@ section {
                     /* Medium devices (landscape tablets, 768px and up) */
                     @media only screen and (min-width: 768px) {
                       width: 60% !important;
+                      margin-top: 6% !important;
                     }
 
                     /* Large devices (laptops/desktops, 992px and up) */
@@ -1704,3 +1703,4 @@ section {
     }
   }
 }
+
