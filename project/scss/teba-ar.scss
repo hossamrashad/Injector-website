@@ -762,6 +762,41 @@ section {
     min-height: 1200px !important;
     max-height: 1500px !important;
   }
+  .overlay {
+  }
+  .col-md-6 {
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 767px) {
+    }
+
+    /* Small devices (portrait tablets and large phones, 625px and up) */
+    @media only screen and (min-width: 625px) {
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      max-width: 100% !important;
+      .contact100-form {
+        margin-top: 0% !important;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1280px) {
+    }
+
+    /* Extra large devices (large desktops, 1440px and up) */
+    @media only screen and (min-width: 1440px) {
+    }
+
+    /* Extra large devices (large desktops, 1566px and up) */
+    @media only screen and (min-width: 1566px) {
+    }
+  }
 }
 .layer5 {
   @include xs-sm-media {
@@ -1214,7 +1249,7 @@ section {
                 }
                 .contain {
                   position: relative;
-
+                  @include clearfix;
                   .cube {
                     /* Extra small devices (phones, 600px and down) */
                     @media only screen and (max-width: 600px) {
@@ -1223,11 +1258,6 @@ section {
                     }
                   }
                   .move {
-                    /* Extra small devices (phones, 600px and down) */
-                    @media only screen and (max-width: 600px) {
-                      position: absolute;
-                      top: 50% !important;
-                    }
                     h1 {
                       @include xs-sm-media {
                         font-size: 35px !important;
@@ -1248,26 +1278,41 @@ section {
                     }
                     /* Extra small devices (phones, 600px and down) */
                     @media only screen and (max-width: 767px) {
+                      position: absolute;
+                      top: 50% !important;
                       left: calc(100% / 3) !important;
                     }
-                    
+
                     /* Small devices (portrait tablets and large phones, 625px and up) */
-                    @media only screen and (min-width: 625px) {}
-                    
+                    @media only screen and (min-width: 625px) {
+                    }
+
                     /* Medium devices (landscape tablets, 768px and up) */
-                    @media only screen and (min-width: 768px) {}
-                    
+                    @media only screen and (min-width: 768px) {
+                      position: absolute;
+                      top: 10% !important;
+                      left: calc(100% / 3) !important;
+                    }
+
                     /* Large devices (laptops/desktops, 992px and up) */
-                    @media only screen and (min-width: 992px) {}
-                    
+                    @media only screen and (min-width: 992px) {
+                      left: 126px !important;
+                    }
+
                     /* Extra large devices (large laptops and desktops, 1200px and up) */
-                    @media only screen and (min-width: 1280px) {}
-                    
+                    @media only screen and (min-width: 1280px) {
+                      left: 126px !important;
+                    }
+
                     /* Extra large devices (large desktops, 1440px and up) */
-                    @media only screen and (min-width: 1440px) {}
-                    
+                    @media only screen and (min-width: 1440px) {
+                      left: 200px !important;
+                    }
+
                     /* Extra large devices (large desktops, 1566px and up) */
-                    @media only screen and (min-width: 1566px) {}
+                    @media only screen and (min-width: 1566px) {
+                      left: 216px !important;
+                    }
                   }
                   p.note.not {
                     @include xs-sm-media {
@@ -1281,11 +1326,12 @@ section {
                     }
                     /* Medium devices (landscape tablets, 768px and up) */
                     @media only screen and (min-width: 768px) {
-                      width: 60% !important;
+                      width: 90% !important;
                       float: right;
                     }
                     /* Large devices (laptops/desktops, 992px and up) */
                     @media only screen and (min-width: 992px) {
+                      width: 60% !important;
                     }
                     /* Extra large devices (large laptops and desktops, 1200px and up) */
                     @media only screen and (min-width: 1200px) {
@@ -1303,12 +1349,14 @@ section {
                     }
                     /* Medium devices (landscape tablets, 768px and up) */
                     @media only screen and (min-width: 768px) {
-                      width: 60% !important;
+                      width: 90% !important;
                       float: right;
                     }
                     /* Large devices (laptops/desktops, 992px and up) */
                     @media only screen and (min-width: 992px) {
+                      width: 60% !important;
                     }
+
                     /* Extra large devices (large laptops and desktops, 1200px and up) */
                     @media only screen and (min-width: 1200px) {
                     }
@@ -1334,6 +1382,41 @@ section {
                         left: 50% !important;
                       }
                     }
+                    /* Extra small devices (phones, 600px and down) */
+                    @media only screen and (max-width: 767px) {
+                      display: block !important;
+                    }
+
+                    /* Small devices (portrait tablets and large phones, 625px and up) */
+                    @media only screen and (min-width: 625px) {
+                    }
+
+                    /* Medium devices (landscape tablets, 768px and up) */
+                    @media only screen and (min-width: 768px) {
+                      left: 0 !important;
+                      display: block !important;
+                    }
+
+                    /* Large devices (laptops/desktops, 992px and up) */
+                    @media only screen and (min-width: 992px) {
+                    }
+
+                    /* Extra large devices (large laptops and desktops, 1200px and up) */
+                    @media only screen and (min-width: 1280px) {
+                      width: 80% !important;
+                      margin-right: auto !important;
+                      .label-input100 {
+                        left: 70% !important;
+                      }
+                    }
+
+                    /* Extra large devices (large desktops, 1440px and up) */
+                    @media only screen and (min-width: 1440px) {
+                    }
+
+                    /* Extra large devices (large desktops, 1566px and up) */
+                    @media only screen and (min-width: 1566px) {
+                    }
                     input,
                     textarea {
                       @include xs-media {
@@ -1350,7 +1433,8 @@ section {
                   }
                   div.newbtn {
                     @include sm-md-media {
-                      margin-bottom: 70px;
+                      margin-bottom: 0px;
+                      right: 0 !important;
                     }
                     @include xs-media {
                       margin-bottom: 70px;
