@@ -684,6 +684,9 @@ section {
     position: relative;
     right: 0px !important;
   }
+  @include md-media {
+    right: 100% !important;
+  }
 }
 .validate-form {
   @include xs-sm-media {
@@ -692,8 +695,15 @@ section {
 }
 .validate-input {
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     left: 0% !important;
+  }
+  @include md-lg-media {
+    width: 300px !important;
+  }
+  @include lg-media {
+    width: 70% !important;
+    left: 0 !important;
   }
 }
 .label-input100 {
@@ -735,7 +745,7 @@ section {
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    left: 66% !important;
+    left: 76% !important;
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -748,12 +758,18 @@ section {
 
   /* Extra large devices (large desktops, 1566px and up) */
   @media only screen and (min-width: 1566px) {
+    left: 85% !important;
   }
 }
 .note {
   @include xs-sm-media {
     left: 0 !important;
     display: none !important;
+  }
+  @include xs-media {
+    display: block !important;
+    position: relative !important;
+    right: 5% !important;
   }
 }
 .add {
@@ -770,7 +786,23 @@ section {
   @include mq(350px) {
     top: 65px !important;
   }
-  @include mq(250px) {
+  @include md-media {
+    top: 0 !important;
+    left: 0 !important;
+    right: 5% !important;
+    direction: rtl !important;
+  }
+  span {
+    @include md-media {
+      position: relative !important;
+      right: 5% !important;
+    }
+  }
+  .whats {
+    @include md-media {
+      left: auto !important;
+      right: 5% !important;
+    }
   }
 }
 .layer5 .header-inner {
@@ -789,6 +821,9 @@ section {
   @include mq(250px) {
     min-height: 1200px !important;
     max-height: 1500px !important;
+  }
+  @include md-lg-media {
+    min-height: 600px !important;
   }
   .overlay {
   }
@@ -828,18 +863,23 @@ section {
 }
 .layer5 {
   @include xs-sm-media {
-    min-height: 1200px !important;
+    min-height: 1400px !important;
   }
   @include sm-md-media {
-    min-height: 1200px !important;
+    min-height: 1400px !important;
   }
-  height: auto;
+  @include md-media {
+    min-height: 600px !important;
+  }
   .header-inner {
     @include xs-sm-media {
-      min-height: 1200px !important;
+      min-height: 1400px !important;
     }
     @include sm-md-media {
-      min-height: 1200px !important;
+      min-height: 1400px !important;
+    }
+    @include md-media {
+      min-height: 600px !important;
     }
     .overlay {
       .col-md-6 {
@@ -879,6 +919,7 @@ section {
 .contact100-form {
   padding: 0px 88px 57px 230px !important;
 }
+
 section {
   section {
     .auto-container {
@@ -887,18 +928,23 @@ section {
   }
   .layer5 {
     @include xs-sm-media {
-      min-height: 1200px !important;
+      min-height: 1400px !important;
     }
     @include sm-md-media {
-      min-height: 1200px !important;
+      min-height: 1400px !important;
     }
-    height: auto;
+    @include md-media {
+      min-height: 600px !important;
+    }
     .header-inner {
       @include xs-sm-media {
-        min-height: 1200px !important;
+        min-height: 1400px !important;
       }
       @include sm-md-media {
-        min-height: 1200px !important;
+        min-height: 1400px !important;
+      }
+      @include md-media {
+        min-height: 600px;
       }
       .overlay {
         .col-md-6 {
@@ -914,10 +960,10 @@ section {
   }
   section.section-side-image.clearfix.layer5 {
     @include xs-sm-media {
-      min-height: 1200px !important;
+      min-height: 1400px !important;
     }
     @include sm-md-media {
-      min-height: 1200px !important;
+      min-height: 1400px !important;
     }
     // height: auto !important;
     .img-holder {
@@ -930,6 +976,9 @@ section {
       .row {
         .nopadding {
           .header-inner {
+            @include md-media {
+              min-height: 600px !important;
+            }
             .overlay {
               // right
               .col-md-6 {
@@ -946,10 +995,17 @@ section {
                   width: 100% !important;
                   height: auto !important;
                 }
+
                 .contain {
                   .cube {
+                    @include md-lg-media {
+                      width: 65% !important;
+                    }
                   }
                   .move {
+                    @include md-lg-media {
+                      left: 70% !important;
+                    }
                     h1 {
                       @include xs-sm-media {
                         font-size: 35px !important;
@@ -983,6 +1039,12 @@ section {
                     @include xs-sm-media {
                       top: -100px;
                       position: relative;
+                      direction: rtl;
+                    }
+                    @include sm-md-media {
+                      top: 0 !important;
+                      left: -5% !important;
+                      direction: rtl !important;
                     }
                     h4.marg {
                       @include mq(10000px) {
@@ -997,10 +1059,31 @@ section {
                       @include mq(992px) {
                         margin-right: 100px !important ;
                       }
+                      @include xs-sm-media {
+                        margin-right: 50px !important;
+                      }
+                      @include md-lg-media {
+                        margin-right: 50px !important;
+                      }
                     }
                     span {
+                      @include xs-sm-media {
+                        margin-left: auto !important;
+                        margin-right: 50px !important;
+                      }
+                      @include sm-md-media {
+                        margin-left: auto !important;
+                        margin-right: 50px !important;
+                      }
+                      @include md-lg-media {
+                        margin-left: auto !important;
+                        margin-right: 50px !important;
+                      }
                     }
                     div.whats {
+                      @include xs-sm-media {
+                        left: -50px !important;
+                      }
                       a {
                         img {
                         }
@@ -1016,12 +1099,17 @@ section {
                 @include xs-sm-media {
                   width: 100% !important;
                 }
+                .validate-form {
+                  @include md-media {
+                    padding: 20px 30px !important;
+                  }
+                }
                 form.contact100-form.validate-form {
                   @include xs-sm-media {
-                    padding: 0px 88px 57px 230px !important;
+                    padding: 0px 20px 57px 20px !important;
                   }
                   /* Extra small devices (phones, 600px and down) */
-                  @media only screen and (max-width: 600px) {
+                  @media only screen and (max-width: 767px) {
                     margin-top: 10%;
                     margin: 0;
                     left: 0 !important;
@@ -1032,14 +1120,21 @@ section {
 
                   .wrap-input100 {
                     @include xs-sm-media {
-                      width: 250px !important;
+                      width: 100% !important;
+                      left: 0 !important;
                     }
                     @include sm-md-media {
-                      width: 250px !important;
+                      width: 100% !important;
+                      left: 0 !important;
                     }
                     @include lg-media {
                       width: 100% !important;
                     }
+                    @include md-lg-media {
+                      width: 300px !important;
+                      left: -20% !important;
+                    }
+
                     span.label-input100 {
                     }
                     &:last-child {
@@ -1055,25 +1150,9 @@ section {
                         width: 100% !important;
                         min-width: 150px !important;
                       }
-                      @include mq(10000px) {
-                      }
-                      @include mq(1566px) {
-                      }
-                      @include mq(1200px) {
-                      }
-                      @include mq(992px) {
-                      }
-                      @include mq(786px) {
-                      }
                       @include mq(576px) {
                         width: 100%;
                         min-width: 250px;
-                      }
-                      @include mq(450px) {
-                      }
-                      @include mq(350px) {
-                      }
-                      @include mq(250px) {
                       }
                     }
                     textarea {
@@ -1087,6 +1166,9 @@ section {
                   }
                   .container-contact100-form-btn {
                     margin-top: 25% !important;
+                    @include md-media {
+                      left: 100% !important;
+                    }
                     button {
                       span {
                         // start i
@@ -1198,7 +1280,7 @@ section {
     }
   }
   .label-input100 {
-    @include mq(992px, 1025px) {
+    @include md-media {
       left: 56% !important;
     }
   }
@@ -1232,7 +1314,9 @@ section {
   }
   section.section-side-image.clearfix.layer {
     // height: 700px !important;
-    min-height: 1300px !important;
+    @include md-media {
+      min-height: 1000px !important;
+    }
     div.img-holder {
       @include xs-media {
         height: 1350px !important;
@@ -1256,6 +1340,9 @@ section {
             @include sm-md-media {
               min-height: 1350px !important;
               overflow-y: auto !important;
+            }
+            @include md-media {
+              min-height: 1000px !important;
             }
             // height: 100% !important;
             div.overlay {
@@ -1308,7 +1395,7 @@ section {
                     @media only screen and (max-width: 767px) {
                       position: absolute;
                       top: 50% !important;
-                      left: calc(100% / 3) !important;
+                      left: 10% !important;
                     }
 
                     /* Small devices (portrait tablets and large phones, 625px and up) */
@@ -1319,7 +1406,7 @@ section {
                     @media only screen and (min-width: 768px) {
                       position: absolute;
                       top: 10% !important;
-                      left: calc(100% / 3) !important;
+                      left: 10% !important;
                     }
 
                     /* Large devices (laptops/desktops, 992px and up) */
@@ -1475,6 +1562,9 @@ section {
                     }
                   }
                   div.container-contact100-form-btn {
+                    @include md-media {
+                      margin-top: 20% !important;
+                    }
                     button {
                       span {
                         i {
